@@ -70,8 +70,11 @@ public class Player : MonoBehaviour
            //playerAnimation.isAttacking(true);
             Invoke("ResetAttack", 1);
         }
-        
-        
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void FixedUpdate()
